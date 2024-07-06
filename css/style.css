@@ -1,13 +1,7 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
 html, body{
   	font-family: 'Oswald', sans-serif;
     font-size: 100%;
-  	 background: #FFf;
+  	 background: #f5f5db;
 }
 body a{
 	transition:0.5s all;
@@ -18,11 +12,19 @@ body a{
 }
 /*-----start-header----*/
 .header{
-	background: #F7F8F8;
+	background: #f5f5db;
 }
 .logo{
 	float: left;
 	margin-top: 0.2em;
+}
+.logo img {
+    width: 150px; 
+    height: 100px;
+    object-fit: contain;
+}
+.logo label {
+	font-size: 35px;
 }
 .logo a{	color: #303030;
 	font-weight: 200;
@@ -50,7 +52,7 @@ body a{
 }
 .top-nav ul li.active a,
 .top-nav ul li a:hover{
-	color:#42B3E5;
+	color:#c7c76a;
 }
 .logo a{
 	display:block;
@@ -246,12 +248,12 @@ nav a#pull {
 	font-size: 20px;
 	text-shadow: none;
 	color: #fff;
-	left: 17%;
+	left: 50%;
 	right: 0;
 	padding: 10px 20px;
 	margin: 0;
 	max-width: none;
-	top: 13%;
+	top: 1%;
 }
 .callbacks_nav {
   	position: absolute;
@@ -368,12 +370,12 @@ nav a#pull {
 	text-transform: uppercase;
 	padding: 0;
 	margin:0;
-	color: #FFF;
+	color:#696a6c;
 	font-weight: 900;
 }
 /*----*/
 .slide-text-info label{
-	color: #FFF;
+	color: #696a6c;
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 1.2em;
@@ -381,7 +383,7 @@ nav a#pull {
 }
 /*----*/
 .slide-btn{
-	background: #3A9ECB;
+	background: #696a6c;
 	padding: 0.7em 3em;
 	margin-top: 1em;
 	display: inline-block;
@@ -392,7 +394,7 @@ nav a#pull {
 .slide-btn:hover{
 	color:#FFF;
 	text-decoration:none;
-	background:#2E7DA1;
+	background:#e0e0c0;
 }
 div.slide-text-info {
 	margin-top: 6em;

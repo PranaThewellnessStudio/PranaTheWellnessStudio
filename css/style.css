@@ -67,6 +67,7 @@ body a{
     clear: both;
 }
 nav {
+	margin-top: 1em;
 	position: relative;
 	float: right;
 }
@@ -89,7 +90,7 @@ nav a {
 }
 nav a:hover{
 	text-decoration:none;
-	color:#00A2C1;
+	color:#c7c97d;
 }
 nav a#pull {
 	display: none;
@@ -406,7 +407,7 @@ div.slide-text-info {
 	padding:3em 0;
 }
 .header h2{
-	color: #42B3E5;
+	color: #686a69;
 	font-size:3em;
 	text-transform: uppercase;
 	font-weight: 400;

@@ -49,8 +49,8 @@ body a{
 }
 .top-nav ul li a{
 	color: #737373;
-	padding: 0.23em 1em;
-	font-size: 1.05em;
+	padding-right: 18px;
+	font-size: 15px;
 	text-align: center;
 	text-transform: uppercase;
 	position: relative;

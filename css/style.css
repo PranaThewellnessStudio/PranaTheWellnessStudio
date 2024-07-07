@@ -22,6 +22,7 @@ body a{
     width: 150px; 
     height: 100px;
     object-fit: contain;
+	margin-right: -30px;
 }
 .logo label {
 	font-size: 35px;
@@ -370,10 +371,10 @@ nav a#pull {
 	font-weight: 900;
 	text-transform: uppercase;
 	padding: 0;
-	margin:0;
-	color:#696a6c;
-	font-weight: 900;
+    margin: 0;
+    color: #696a6c;
 }
+
 /*----*/
 .slide-text-info label{
 	color: #696a6c;
@@ -402,6 +403,15 @@ div.slide-text-info {
 	margin-left: -3em;
 }
 /*----//slider----*/
+
+
+
+/*--- Why Us ---*/
+.imagecls {
+    width: 300px; 
+    height: 250px; 
+    object-fit: cover; 
+}
 /*---- about ---*/
 .about{
 	padding:3em 0;
@@ -426,13 +436,16 @@ div.slide-text-info {
 .about-grids{
 	padding:3em 0;
 }
+
 .about-grid{
-	background:url(../images/top-grid-info-bg-b.png);
+	background:url(../images/top-grid-info-bg-bl.png);
+	/* background:url(../images/top-grid-info-bg-b.png); */
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
+	height: 550px;
 }
 .about-grid:hover,.n-about-grid{
 	background:url(../images/top-grid-info-bg-bl.png);
@@ -442,20 +455,11 @@ div.slide-text-info {
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
-.n-about-grid:hover{
+/* .n-about-grid:hover{
 	background:url(../images/top-grid-info-bg-b.png);
-}
+} */
 .about-grid:hover span{
 	background-position: 0px -79px;
-}
-.about-grid span{
-	width: 69px;
-	height: 76px;
-	display: inline-block;
-	background: url(../images/top-grid-icons1.png) no-repeat 0px 0px;
-	position: absolute;
-	top: 249px;
-	left: 40%;
 }
 .about-grid img{
 	border-bottom:5px solid #FFF;
@@ -487,19 +491,12 @@ div.slide-text-info {
 	font-weight:100;
 	line-height:1.5em;
 }
+.WhyUsSubheadings {
+	color: #FFF;
+}
 /*----*/
-.n-about-grid1 span.t-icon1{
-	background-position: -71px -79px;
-}
-.n-about-grid1:hover span.t-icon1{
-	background-position: -71px 0px;
-}
-.n-about-grid2 span.t-icon2{
-	background-position: -141px -79px;
-}
-.n-about-grid2:hover span.t-icon2{
-	background-position: -141px 0px;
-}
+/*--- Why Us ---*/
+
 /*--- services ---*/
 .services{
 	background:url(../images/service-bg.png);

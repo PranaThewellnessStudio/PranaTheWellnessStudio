@@ -25,12 +25,13 @@ body a{
 	margin-right: -30px;
 }
 .logo label {
-	font-size: 35px;
+	font-size: 28px;
 }
 .logo a{	color: #303030;
 	font-weight: 200;
 	text-transform: uppercase;
 	font-size: 2.5em;
+	margin-right: -20px;
 }
 .logo a:hover{
 	text-decoration:none;
@@ -40,7 +41,7 @@ body a{
 }
 /*----navbar-nav----*/
 .top-header{
-	padding: 0.8em 0em;
+	padding: 0.4em 0em;
 }
 .top-nav ul li a{
 	color: #737373;
@@ -1260,7 +1261,7 @@ div.slide-text-info {
 		width:70%;
 	}
 	.top-header {
-		padding: 0.4em 0em 1em;
+		padding: 0.2em 0em 1em;
 	}
 	.about-grid-info {
 		padding: 1em 0.5em;

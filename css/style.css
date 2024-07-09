@@ -823,7 +823,7 @@ div.slide-text-info {
 /*---- responsive-design -----*/
 @media(max-width:1024px){
 	.slide-text-info h1 {
-		font-size: 3.5em;
+		font-size: 40px;
 	}
 	div.slide-text-info {
 		margin-top: 4em;
@@ -863,7 +863,10 @@ div.slide-text-info {
 }
 @media(max-width:768px){
 	.slide-text-info h1 {
-		font-size: 2.5em;
+		padding-top: -25px;
+		font-size: 20px;
+		line-height: 25px;
+		max-lines: 2;
 	}
 	div.slide-text-info {
 		margin-top: 2em;
@@ -908,7 +911,7 @@ div.slide-text-info {
 		font-size: 1.4em;
 	}
 	.slide-text-info label {
-		font-size: 0.9em;
+		font-size: 10px;
 	}
 	.slide-btn {
 		padding: 0.6em 1em;
@@ -957,7 +960,10 @@ div.slide-text-info {
 }
 @media(max-width:640px){
 	.slide-text-info h1 {
-		font-size: 2.2em;
+		padding-top: -25px;
+		font-size: 20px;
+		line-height: 25px;
+		max-lines: 2;
 	}
 	div.slide-text-info {
 		margin-top: 2em;
@@ -1002,7 +1008,7 @@ div.slide-text-info {
 		font-size: 1.4em;
 	}
 	.slide-text-info label {
-		font-size: 0.8em;
+		font-size: 10px;
 	}
 	.slide-btn {
 		padding: 0.4em 1em;
@@ -1052,7 +1058,10 @@ div.slide-text-info {
 }
 @media(max-width:480px){
 	.slide-text-info h1 {
-		font-size: 1.2em;
+		padding-top: -25px;
+		font-size: 20px;
+		line-height: 25px;
+		max-lines: 2;
 	}
 	div.slide-text-info {
 		margin-top: 0.9em;
@@ -1099,7 +1108,7 @@ div.slide-text-info {
 		width: 100%;
 	}
 	.slide-text-info label {
-		font-size: 0.75em;
+		font-size: 10px;
 	}
 	.slide-btn {
 		padding: 0.4em 1em;
@@ -1156,8 +1165,10 @@ div.slide-text-info {
 }
 @media(max-width:320px){
 	.slide-text-info h1 {
-		font-size: 0.9em;
-		line-height: 1.2em;
+		padding-top: -25px;
+		font-size: 20px;
+		line-height: 25px;
+		max-lines: 2;
 	}
 	div.slide-text-info {
 		margin-top: 0.5em;

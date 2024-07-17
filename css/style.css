@@ -570,7 +570,6 @@ div.slide-text-info {
 
 .team-member-photo {
     width: 30%;
-	height: 30%;
 }
 
 .team-member-info {
@@ -806,10 +805,6 @@ div.slide-text-info {
 		width: 70%;
 		margin: 1em auto 0;
 	}
-	/* .team-member-info p {
-		height: 130px;
-		overflow: hidden;
-	} */
 	.bottom-t-info-b span {
 		top: 172px;
 	}

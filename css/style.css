@@ -607,7 +607,7 @@ div.slide-text-info {
 	position: absolute;
 	width: 100%;
 	top: 0px;
-	background: url(../images/top-grid-info-bg-b.png);
+	background-color:#696a6c;
 	padding: 3em;
 	top: 8%;
 }
@@ -655,9 +655,6 @@ div.slide-text-info {
 }
 .contact-grid-left li small{
 	font-weight:300;
-}
-.contact-grid-left li span.pin{
-	background-position: 0px -41px;
 }
 .contact-grid-left li span.phone{
 	background-position: 0px -85px;
@@ -711,12 +708,12 @@ div.slide-text-info {
 	font-family: 'Open Sans', sans-serif;
 }
 .copy-right-left p{
-	color:#555;
+	color:#ffffff;
 	font-size:0.875em;
 	margin:0;
 }
 .copy-right-left p a{
-	color:#3A9ECB;
+	color:#183b4b;
 }
 .copy-right-left p a:hover{
 	color:#1F1F1F;

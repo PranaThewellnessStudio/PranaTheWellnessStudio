@@ -439,12 +439,11 @@ div.slide-text-info {
 }
 /*---- about-grid ----*/
 .about-grids{
-	padding:3em 0;
+	padding:15px;
 }
 
 .about-grid{
 	background:url(../images/top-grid-info-bg-bl.png);
-	/* background:url(../images/top-grid-info-bg-b.png); */
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
@@ -460,9 +459,6 @@ div.slide-text-info {
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
-/* .n-about-grid:hover{
-	background:url(../images/top-grid-info-bg-b.png);
-} */
 .about-grid:hover span{
 	background-position: 0px -79px;
 }
@@ -929,6 +925,7 @@ div.slide-text-info {
 		margin-top: 2em;
 		margin-left: -2em;
 	}
+	
 	.about-grid span {
 		top: 420px;
 		left: 45%;

@@ -255,14 +255,32 @@
 							</div>
 							<div class="col-md-7 contact-grid-right">
 								<h4>leave us a message</h4>
-								<form>
-									<input type="text" value="Name:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name:';}">
-									<input type="text" value="Email:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email:';}">
-									<input type="text" value="Phone No:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone No:';}">
-									<textarea rows="2" cols="70" onfocus="if(this.value == 'Message:') this.value='';" onblur="if(this.value == '') this.value='Message:';">Message:</textarea>
-									<input type="submit" value="SEND MESSAGE" />
+								<form id="contactForm" action="">
+								  <input type="text" id="name" name="Name of The client:" value="Name:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name:';}">
+								  <input type="text" id="email" name="Email-Address:" value="Email:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email:';}">
+								  <input type="text" id="phone" name="Mobile Number:" value="Phone No:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone No:';}">
+								  <textarea id="message" name="Message:" rows="2" cols="70" onfocus="if(this.value == 'Message:') this.value='';" onblur="if(this.value == '') this.value='Message:';">Message:</textarea>
+								  <input type="submit" value="SEND MESSAGE" />
 								</form>
-							</div>
+								<script>
+									$("#contactForm").submit((e)=>{
+										e.preventDefault()
+										$.ajax({
+											url:"https://script.google.com/macros/s/AKfycbwOGMQgZIOOeHTlxXYzSiR8WiCqOdvG2TH2m0HG0Bbs_LxOhZewGpkHAJrX5aKnAmlOaQ/exec",
+											data:$("#contactForm").serialize(),
+											method:"post",
+											success:function (response){
+												alert("Thank you For The Enquiry.We will Contact you shortly")
+												window.location.reload()
+											},
+											error:function (err){
+												alert("Something Error.Try Again")
+								
+											}
+										})
+									})
+								</script>
+							  </div>
 							<div class="copy-right-right">
 									<ul>
 										<li><a class="facebook" href="#"><span> </span></a></li>

@@ -619,7 +619,7 @@ div.slide-text-info {
 	padding: 0;
 	color: #FFF;
 	font-weight: 400;
-	padding: 0.2em 0;
+	padding-bottom: 20px;
 	margin-right: 2em;
 }
 .contact h4{
@@ -643,7 +643,7 @@ div.slide-text-info {
 	margin: 1em 0;
 }
 .contact-grid-left li span{
-	width: 32px;
+	width: 25px;
 	height: 32px;
 	display: inline-block;
 	background: url(../images/contact-icons.png) no-repeat 0px 0px;
@@ -651,7 +651,7 @@ div.slide-text-info {
 }
 .contact-grid-left li label{
 	font-weight:400;
-	margin-right:0.3em;
+	margin-right:5px;
 }
 .contact-grid-left li small{
 	font-weight:300;
@@ -703,19 +703,21 @@ div.slide-text-info {
 .contact-grid-right input[type="submit"]:hover{
 	background:#348DB6;
 }
-.copy-right-left{
+.copy-right{
 	float:right;
 	font-family: 'Open Sans', sans-serif;
+	font-size: 10px;
+	padding-top: 20px;
 }
-.copy-right-left p{
+.copy-right p{
 	color:#ffffff;
 	font-size:0.875em;
 	margin:0;
 }
-.copy-right-left p a{
+.copy-right p a{
 	color:#183b4b;
 }
-.copy-right-left p a:hover{
+.copy-right p a:hover{
 	color:#1F1F1F;
 	text-decoration:none;
 }

@@ -1,312 +1,358 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Prana The Wellness studio | Home</title>
-		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-		<script src="js/jquery.min.js"></script>
-		<link href="css/style.css" rel='stylesheet' type='text/css' />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-		</script>
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
-		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-		<script>
-			$(function() {
-				var pull 		= $('#pull');
-					menu 		= $('nav ul');
-					menuHeight	= menu.height();
-				$(pull).on('click', function(e) {
-					e.preventDefault();
-					menu.slideToggle();
-				});
-				$(window).resize(function(){
-	        		var w = $(window).width();
-	        		if(w > 320 && menu.is(':hidden')) {
-	        			menu.removeAttr('style');
-	        		}
-	    		});
-			});
-		</script>
-	</head>
-	<body>
-		<!----- start-header---->
-			<div id="home" class="header">
-					<div class="top-header">
-						<div class="container">
-						<div class="logo">
-							<a href="#"><img src="images\Logos\logoImage.jpg" title="Prana" />
-								<label>Prana The Wellness Studio</label>
-							</a>
-						</div>
-						<!----start-top-nav---->
-						 <nav class="top-nav">
-							<ul class="top-nav">
-								<li class="active"><a href="#home" class="scroll">Home </a></li>
-								<li><a href="#about" class="scroll">Why us</a></li>
-								<li><a href="#services" class="scroll">our services</a></li>
-								<li><a href="#team" class="scroll">About me</a></li>
-								<li><a href="#team" class="scroll">Journals</a></li>
-								<li><a href="#contact" class="scroll">Contact</a></li>
-								<!-- <li><a href="#contact" class="scroll">FAQs</a></li> -->
-							</ul>
-							<a href="#" id="pull"><img src="images/menu-icon.png" title="menu" /></a>
-						</nav>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-			</div>
-		<!----- //End-header---->
-		<!----start-slider-script---->
-			<script src="js/responsiveslides.min.js"></script>
-			 <script>
-			    $(function () {
-			      $("#slider4").responsiveSlides({
-			        auto: true,
-			        pager: true,
-			        nav: true,
-			        speed: 500,
-			        namespace: "callbacks",
-			        before: function () {
-			          $('.events').append("<li>before event fired.</li>");
-			        },
-			        after: function () {
-			          $('.events').append("<li>after event fired.</li>");
-			        }
-			      });
-			
-			    });
-			  </script>
-			<!----//End-slider-script---->
-			<!-- Slideshow 4 -->
-			    <div  id="top" class="callbacks_container">
-			      <ul class="rslides" id="slider4">
-			        <li>
-			          <img src="images\bannerImage1.jpg" alt="">
-			          <div class="caption">
-			          	<div class="slide-text-info">
-			          		<h1>MindFul Wellness</h1>
-			          		<label>Transform Your Life with Empowering Therapy</label>
-			          		<a class="slide-btn" href="#about">learn more</a>
-			          	</div>
-			          </div>
-			        </li>
-					<li>
-						<img src="images\bannerImage2.png" alt="">
-						<div class="caption">
-							<div class="slide-text-info">
-								<h1>Hope and Healing</h1>
-								<label>Compassionate Support For your Mental Health Journey</label>
-								<a class="slide-btn" href="#about">learn more</a>
-							</div>
-						</div>
-					  </li>
-			      </ul>
-			    </div>
-			    <div class="clearfix"> </div>
-			<!----- //End-slider---->
-			<!---- Why Us ---->
-			<div id="about" class="about">
-				<div class="container">
-					<div class="header about-header text-center">
-						<h2>WHY US ?</h2>
-						<p>By the years of experience, We have helped numerous individuals navigate through various mental health challenges. Our approach is centered around empathy, active listening, and evidence-based techniques.</p>
-					</div>
-					<!---- About-grids ---->
-					<div class="about-grids">
-						<div class="col-md-4">
-							<div class="about-grid">
-								<img class="imagecls" src="images\whyUs1.jpg" title="name" />
-								<div class="about-grid-info text-center">
-									<h3><a href="#">Easy Booking</a></h3>
-									<h5><a href="#" class = "WhyUsSubheadings" >Effortless Appointments</a></h5>
-									<p>Booking your session is simple and hassle-free with our user-friendly online system. Schedule your appointment at your convenience, and get ready for a seamless experience.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="about-grid n-about-grid n-about-grid1">
-								<img class="imagecls" src="images\whyUs2.jpg" title="name" />
-								<div class="about-grid-info text-center">
-									<h3><a href="#">Confidential</a></h3>
-									<h5><a href="#" class = "WhyUsSubheadings" >Your Privacy Matters</a></h5>
-									<p>We prioritize your privacy. All sessions and personal information are kept strictly confidential, ensuring you a safe and secure environment to share and heal.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="about-grid n-about-grid n-about-grid2">
-								<img class="imagecls" src="images\whyUs3.jpg" title="name" />
-								<div class="about-grid-info text-center">
-									<h3><a href="#">Non judgemental</a></h3>
-									<h5><a href="#" class = "WhyUsSubheadings" >Safe and Supportive</a></h5>
-									<p>Our practice offers a non-judgemental space where you can express yourself freely. We are here to listen and support you without any biases or preconceived notions.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="about-grid n-about-grid n-about-grid2">
-								<img class="imagecls" src="images\whyUs4.jpg" title="name" />
-								<div class="about-grid-info text-center">
-									<h3><a href="#">It's Affordable</a></h3>
-									<h5><a href="#" class = "WhyUsSubheadings" >Accessible Care</a></h5>
-									<p>We believe that mental health support should be accessible to everyone. Our services are designed to be affordable, ensuring you receive the help you need without financial strain.</p>
-								</div>
-							</div>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<!---- About-grids ---->
-				</div>
-				
-			</div>
-			<!---- Why Us ---->
-			
-			<!--- services --->
-			<div id="services" class="services">
-				<div class="container">
-					<div class="header services-header text-center">
-						<h2>our services</h2>
-						<!-- <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p> -->
-					</div>
-					<!---- service-grids--->
-					<div class="service-grids">
-						<div class="col-md-3">
-							<div class="service-grid text-center">
-								<a href="#"><span class="s1-icon"> </span></a>
-								<h3><a href="#">Heart problem</a></h3>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="service-grid text-center">
-								<a href="#"><span class="s2-icon"> </span></a>
-								<h3><a href="#">brain problem</a></h3>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="service-grid text-center">
-								<a href="#"><span class="s3-icon"> </span></a>
-								<h3><a href="#">knee problem</a></h3>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="service-grid text-center">
-								<a href="#"><span class="s4-icon"> </span></a>
-								<h3><a href="#">human bones problem</a></h3>
-							</div>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<!----//service-grids--->
-				</div>
-				
-			</div>
-			<!--- services --->
-			<!--- team --->
-			<div id="team" class="team">
-				<div class="container">
-					<div class="header team-head text-center">
-						<h2>About me</h2>
-						<!-- <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p> -->
-					</div>
-					<!--- teammember-grids ---->
-					<div class="team-member-grids">
-						<div class="team-member-grid">
-							<img src="images\gayathriImage.jpg" class="team-member-photo" title="name" />
-							<div class="team-member-info">
-								<h3><a href="#">Gayathri G</a></h3>
-								<p>Dedicated clinical psychologist with years of experience. She is committed to providing compassionate, evidence-based care, specializing in cognitive-behavioral therapy and mindfulness practices to help clients navigate anxiety, depression, and relationship issues.</p>
-							</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					
-					
-					<!---//teammember-grids ---->
-				</div>
-			</div>
-			<!--- team --->
-			<!---- contact ---->
-			<div id="contact" class="contact">
-				<div class="map">
-					<div class="contact-info">
-						<div class="container">
-						<!---- contact-grids ---->
-						<div class="contact-grids">
-							<h3>contact us</h3>
-							<div class="col-md-5 contact-grid-left">
-								<h4>contact information</h4>
-								<ul>
-									<li><span class="cal"> </span><label>Monday - Friday :</label><small>9:30 AM to 6:30 PM</small></li>
-									<li><span class="phone"> </span><label>Phone :</label><small>+91 9074645135</small></li>
-									<li><span class="fax"> </span><label>Web Address :</label><small>www.pranathewellnessstudio.com</small></li>
-									<li><span class="mail"> </span><label>Email :</label><small> pranathewellnessstudio@gmail.com</small></li>
-								</ul>
-							</div>
-							<div class="col-md-7 contact-grid-right">
-								<h4>leave us a message</h4>
-								<form id="contactForm" action="">
-								  <input type="text" id="name" name="Name of The client:" value="Name:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name:';}">
-								  <input type="text" id="email" name="Email-Address:" value="Email:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email:';}">
-								  <input type="text" id="phone" name="Mobile Number:" value="Phone No:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone No:';}">
-								  <textarea id="message" name="Message:" rows="2" cols="70" onfocus="if(this.value == 'Message:') this.value='';" onblur="if(this.value == '') this.value='Message:';">Message:</textarea>
-								  <input type="submit" value="SEND MESSAGE" />
-								</form>
-								<script>
-									$("#contactForm").submit((e)=>{
-										e.preventDefault()
-										$.ajax({
-											url:"https://script.google.com/macros/s/AKfycbwOGMQgZIOOeHTlxXYzSiR8WiCqOdvG2TH2m0HG0Bbs_LxOhZewGpkHAJrX5aKnAmlOaQ/exec",
-											data:$("#contactForm").serialize(),
-											method:"post",
-											success:function (response){
-												alert("Thank you For The Enquiry.We will Contact you shortly")
-												window.location.reload()
-											},
-											error:function (err){
-												alert("Something Error.Try Again")
-								
-											}
-										})
-									})
-								</script>
-							  </div>
-							<div class="copy-right-right">
-									<ul>
-										<li><a class="facebook" href="#"><span> </span></a></li>
-										<li><a class="twitter" href="#"><span> </span></a></li>
-										<li><a class="skype" href="#"><span> </span></a></li>
-										<div class="clearfix"> </div>
-									</ul>
-							</div>
-							<div class="clearfix"> </div>
-							<div class="copy-right">
-								<p>Copywrites Owned by <a href="#">@pranaTheWellnessStudio</a></p>
-								<script type="text/javascript">
-												$(document).ready(function() {									
-													$().UItoTop({ easingType: 'easeOutQuart' });										
-												});
-											</script>
-								<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<!---- contact-grids ---->
-					</div>
-					</div>
-				</div>
-			</div>
-			<!---- contact ---->
-			<div class="clearfix"> </div>
-	</body>
-</html>
 
+<head>
+	<title>Prana The Wellness studio | Home</title>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<script src="js/jquery.min.js"></script>
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<!--linking swiperjs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	</script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<script>
+		$(function () {
+			var pull = $('#pull');
+			menu = $('nav ul');
+			menuHeight = menu.height();
+			$(pull).on('click', function (e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function () {
+				var w = $(window).width();
+				if (w > 320 && menu.is(':hidden')) {
+					menu.removeAttr('style');
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<!----- start-header---->
+	<div id="home" class="header">
+		<div class="top-header">
+			<div class="container">
+				<div class="logo">
+					<a href="#"><img src="images\Logos\logoImage.jpg" title="Prana" />
+						<label>Prana The Wellness Studio</label>
+					</a>
+				</div>
+				<!----start-top-nav---->
+				<nav class="top-nav">
+					<ul class="top-nav">
+						<li class="active"><a href="#home" class="scroll">Home </a></li>
+						<li><a href="#about" class="scroll">Why us</a></li>
+						<li><a href="#services" class="scroll">our services</a></li>
+						<li><a href="#team" class="scroll">About me</a></li>
+						<li><a href="#team" class="scroll">Journals</a></li>
+						<li><a href="#contact" class="scroll">Contact</a></li>
+						<!-- <li><a href="#contact" class="scroll">FAQs</a></li> -->
+					</ul>
+					<a href="#" id="pull"><img src="images/menu-icon.png" title="menu" /></a>
+				</nav>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!----- //End-header---->
+	<!----start-slider-script---->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		$(function () {
+			$("#slider4").responsiveSlides({
+				auto: true,
+				pager: true,
+				nav: true,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+
+		});
+	</script>
+	<!----//End-slider-script---->
+	<!-- Slideshow 4 -->
+	<div id="top" class="callbacks_container">
+		<ul class="rslides" id="slider4">
+			<li>
+				<img src="images\bannerImage1.jpg" alt="">
+				<div class="caption">
+					<div class="slide-text-info">
+						<h1>MindFul Wellness</h1>
+						<label>Transform Your Life with Empowering Therapy</label>
+						<a class="slide-btn" href="#about">learn more</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="images\bannerImage2.png" alt="">
+				<div class="caption">
+					<div class="slide-text-info">
+						<h1>Hope and Healing</h1>
+						<label>Compassionate Support For your Mental Health Journey</label>
+						<a class="slide-btn" href="#about">learn more</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="clearfix"> </div>
+	<!----- //End-slider---->
+	<!---- Why Us ---->
+	<div id="about" class="about">
+		<div class="container">
+			<div class="header about-header text-center">
+				<h2>WHY US ?</h2>
+				<p>By the years of experience, We have helped numerous individuals navigate through various mental
+					health challenges. Our approach is centered around empathy, active listening, and evidence-based
+					techniques.</p>
+			</div>
+			<!---- About-grids ---->
+			<div class="about-grids">
+				<div class="col-md-4">
+					<div class="about-grid">
+						<img class="imagecls" src="images\whyUs1.jpg" title="name" />
+						<div class="about-grid-info text-center">
+							<h3><a href="#">Easy Booking</a></h3>
+							<h5><a href="#" class="WhyUsSubheadings">Effortless Appointments</a></h5>
+							<p>Booking your session is simple and hassle-free with our user-friendly online system.
+								Schedule your appointment at your convenience, and get ready for a seamless experience.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="about-grid n-about-grid n-about-grid1">
+						<img class="imagecls" src="images\whyUs2.jpg" title="name" />
+						<div class="about-grid-info text-center">
+							<h3><a href="#">Confidential</a></h3>
+							<h5><a href="#" class="WhyUsSubheadings">Your Privacy Matters</a></h5>
+							<p>We prioritize your privacy. All sessions and personal information are kept strictly
+								confidential, ensuring you a safe and secure environment to share and heal.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="about-grid n-about-grid n-about-grid2">
+						<img class="imagecls" src="images\whyUs3.jpg" title="name" />
+						<div class="about-grid-info text-center">
+							<h3><a href="#">Non judgemental</a></h3>
+							<h5><a href="#" class="WhyUsSubheadings">Safe and Supportive</a></h5>
+							<p>Our practice offers a non-judgemental space where you can express yourself freely. We are
+								here to listen and support you without any biases or preconceived notions.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="about-grid n-about-grid n-about-grid2">
+						<img class="imagecls" src="images\whyUs4.jpg" title="name" />
+						<div class="about-grid-info text-center">
+							<h3><a href="#">It's Affordable</a></h3>
+							<h5><a href="#" class="WhyUsSubheadings">Accessible Care</a></h5>
+							<p>We believe that mental health support should be accessible to everyone. Our services are
+								designed to be affordable, ensuring you receive the help you need without financial
+								strain.</p>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!---- About-grids ---->
+		</div>
+
+	</div>
+	<!---- Why Us ---->
+
+	<!--- services --->
+	<div id="services" class="services">
+		<div class="container">
+			<div class="header services-header text-center">
+				<h2>our services</h2>
+			</div>
+			<!---- service-grids--->
+			<div class="container swiper">
+				<div class="slider-wrapper">
+					<div class="card-list swiper-wrapper">
+						<div class="card-item swiper-slide">
+							<img src="images\services\img6.jpg" alt="alternate text" class="services-image">
+							<h2 class="problembig">Borderline Personality Disorder</h2>
+						</div>
+
+						<div class="card-item swiper-slide">
+							<img src="images\services\img5.jpg" alt="alternate text" class="services-image">
+							<h2 class="problem">Couple Therapy</h2>
+						</div>
+
+						<div class="card-item swiper-slide">
+							<img src="images\services\img4.jpg" alt="alternate text" class="services-image">
+							<h2 class="problem">Depression</h2>
+						</div>
+
+						<div class="card-item swiper-slide">
+							<img src="images\services\img3.jpg" alt="alternate text" class="services-image">
+							<h2 class="problem">Personality development</h2>
+						</div>
+
+						<div class="card-item swiper-slide">
+							<img src="images\services\img2.jpg" alt="alternate text" class="services-image">
+							<h2 class="problem">Trauma</h2>
+						</div>
+
+						<div class="card-item swiper-slide">
+							<img src="images\services\img1.jpg" alt="alternate text" class="services-image">
+							<h2 class="problem">Workplace relationship</h2>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-slide-button swiper-button-prev"></div>
+					<div class="swiper-slide-button swiper-button-next"></div>
+				</div>
+			</div>
+		</div>
+		<!----//service-grids--->
+		<!--linking swiperjs script-->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js\swiper.js"></script>
+	</div>
+	<!--- services --->
+	<!--- team --->
+	<div id="team" class="team">
+		<div class="container">
+			<div class="header team-head text-center">
+				<h2>About me</h2>
+				<!-- <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p> -->
+			</div>
+			<!--- teammember-grids ---->
+			<div class="team-member-grids">
+				<div class="team-member-grid">
+					<img src="images\gayathriImage.jpg" class="team-member-photo" title="name" />
+					<div class="team-member-info">
+						<h3><a href="#">Gayathri G</a></h3>
+						<p>As a dedicated consultant psychologist and founder of Prana - The Wellness Studio, I support
+							individuals on their mental wellness journey. As a psychologist, I am dedicated to
+							understanding the complexities of the human mind. I am deeply interested in studying
+							advanced psychological theories and applying them in real life. I always explore different
+							aspects of psychology, learning about how people think, behave, and manage their mental
+							health. My academic journey included a challenging curriculum that fostered critical
+							thinking and analytical skills. With extensive experience working in clinics with children,
+							adults, and couples, I bring valuable practical insights to my work as a psychologist. Our
+							team provides high - quality mental health services at a affordable way , fostering a safe
+							and supportive environment for personal growth and resilience. Our mission is to empower
+							individuals to navigate life's challenges with confidence and compassion.
+						</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+
+			<!---//teammember-grids ---->
+		</div>
+	</div>
+	<!--- team --->
+	<!---- contact ---->
+	<div id="contact" class="contact">
+		<div class="map">
+			<div class="contact-info">
+				<div class="container">
+					<!---- contact-grids ---->
+					<div class="contact-grids">
+						<h3>contact us</h3>
+						<div class="col-md-5 contact-grid-left">
+							<h4>contact information</h4>
+							<ul>
+								<li><span class="cal"> </span><label>Monday - Friday :</label><small>9:30 AM to 6:30
+										PM</small></li>
+								<li><span class="phone"> </span><label>Phone :</label><small>+91 9074645135</small></li>
+								<li><span class="fax"> </span><label>Web Address
+										:</label><small>www.pranathewellnessstudio.com</small></li>
+								<li><span class="mail"> </span><label>Email :</label><small>
+										pranathewellnessstudio@gmail.com</small></li>
+							</ul>
+						</div>
+						<div class="col-md-7 contact-grid-right">
+							<h4>leave us a message</h4>
+							<form id="contactForm" action="">
+								<input type="text" id="name" name="Name of The client:" value="Name:"
+									onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name:';}">
+								<input type="text" id="email" name="Email-Address:" value="Email:"
+									onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email:';}">
+								<input type="text" id="phone" name="Mobile Number:" value="Phone No:"
+									onfocus="this.value = '';"
+									onblur="if (this.value == '') {this.value = 'Phone No:';}">
+								<textarea id="message" name="Message:" rows="2" cols="70"
+									onfocus="if(this.value == 'Message:') this.value='';"
+									onblur="if(this.value == '') this.value='Message:';">Message:</textarea>
+								<input type="submit" value="SEND MESSAGE" />
+							</form>
+							<script>
+								$("#contactForm").submit((e) => {
+									e.preventDefault()
+									$.ajax({
+										url: "https://script.google.com/macros/s/AKfycbwOGMQgZIOOeHTlxXYzSiR8WiCqOdvG2TH2m0HG0Bbs_LxOhZewGpkHAJrX5aKnAmlOaQ/exec",
+										data: $("#contactForm").serialize(),
+										method: "post",
+										success: function (response) {
+											alert("Thank you For The Enquiry.We will Contact you shortly")
+											window.location.reload()
+										},
+										error: function (err) {
+											alert("Something Error.Try Again")
+
+										}
+									})
+								})
+							</script>
+						</div>
+						<div class="copy-right-right">
+							<ul>
+								<li><a class="facebook" href="#"><span> </span></a></li>
+								<li><a class="twitter" href="#"><span> </span></a></li>
+								<li><a class="skype" href="#"><span> </span></a></li>
+								<div class="clearfix"> </div>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+						<div class="copy-right">
+							<p>Copywrites Owned by <a href="#">@pranaTheWellnessStudio</a></p>
+							<script type="text/javascript">
+								$(document).ready(function () {
+									$().UItoTop({ easingType: 'easeOutQuart' });
+								});
+							</script>
+							<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;">
+								</span></a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<!---- contact-grids ---->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!---- contact ---->
+	<div class="clearfix"> </div>
+</body>
+
+</html>

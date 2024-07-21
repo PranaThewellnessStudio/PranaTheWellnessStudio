@@ -500,7 +500,7 @@ div.slide-text-info {
 
 /*--- services ---*/
 .services{
-	background:url(../images/service-bg.png);
+	background: #686a65;
 	padding: 3em 0;
 }
 .services-header{
@@ -514,42 +514,53 @@ div.slide-text-info {
 	color:#FFF;
 }
 /*--- service-grid ---*/
-.service-grids{
-	padding:3em;
+.container .swiper{
+	padding-top: 40px;
 }
-.service-grid{
-	
-}
-.service-grid a span{
-	width: 224px;
-	height: 244px;
-	display: inline-block;
-	background: url(../images/services-icons.png) no-repeat 0px 0px;
-	transition:0.5s all;
-	-webkit-transition:0.5s all;
-	-moz-transition:0.5s all;
-	-ms-transition:0.5s all;
-	-o-transition:0.5s all;
-}
-.service-grid:hover a span{
-	opacity:0.5;
-}
-.service-grid h3 a{
+.card-list .card-item {
 	color: #fff;
-	text-transform: uppercase;
-	font-size: 0.875em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: rgba(255,255,255,0.2);
+	backdrop-filter: blur(30px);
+	user-select: none;
+	padding: 35px;
+	border-radius: 8px;
+	border: 1px solid rgba(255,255,255,0.5);
 }
-.service-grid h3 a:hover{
-	text-decoration:none;
+.card-list .card-item .services-image {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+	border: 3px solid #fff ;
+	padding: 4x;
+	text-align: center;
 }
-.service-grid a span.s2-icon{
-	background-position: -316px 0px;
+.card-list .card-item .problembig {
+  margin-left: -15px;
+  margin-right: -15px;
+  font-size: 28px;
 }
-.service-grid a span.s3-icon{
-	background-position: -632px 0px;
+.slider-wrapper {
+	overflow: hidden;
+	max-width: 1200px;
+	margin: 0 70px 55px;
 }
-.service-grid a span.s4-icon{
-	background-position: -946px 0px;
+.slider-wrapper .swiper-pagination-bullet {
+	background: #fff;
+	height: 15px;
+	width: 15px;
+}
+.slider-wrapper .swiper-slide-button {
+	color: #fff;
+	margin-top: -50px;
+	transition: 0.2s ease;
+}
+.slider-wrapper .swiper-slide-button:hover{
+	color: #303030;
 }
 /*--- team ----*/
 .team{
@@ -576,7 +587,7 @@ div.slide-text-info {
     justify-content: center;
     padding: 20px;
     box-sizing: border-box;
-	background-color: #348DB6;
+	background-color: #fff;
 }
 .team-member-info h3 {   
 	font-size: 25px;
@@ -893,6 +904,12 @@ div.slide-text-info {
 	}
 	.services {
 		padding: 2em 0 1em;
+	}
+	.slider-wrapper{
+		margin: 0 10px 40px;
+	}
+	.slider-wrapper .swiper-slide-button {
+		display: none;
 	}
 	nav ul {
 		margin-top: 1em;

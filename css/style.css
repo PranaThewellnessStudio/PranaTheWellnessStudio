@@ -803,6 +803,9 @@ div.slide-text-info {
 	.about-grid span {
 		top: 197px;
 	}
+	.slider-wrapper{
+		height: 400px;
+	}
 	.about-grid-info h3 a {
 		font-size: 0.9em;
 	}

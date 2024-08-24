@@ -544,12 +544,12 @@ div.slide-text-info {
   margin-right: -15px;
   font-size: 28px;
   text-align: center;
-  height: 400px;
 }
 .slider-wrapper {
 	overflow: hidden;
 	max-width: 1200px;
 	margin: 0 70px 55px;
+	height: 600px;
 }
 .slider-wrapper .swiper-pagination-bullet {
 	background: #fff;

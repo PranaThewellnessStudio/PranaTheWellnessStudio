@@ -443,7 +443,7 @@ div.slide-text-info {
 }
 
 .about-grid{
-	background:url(../images/top-grid-info-bg-bl.png);
+	background-color: #686a65;
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
@@ -452,7 +452,7 @@ div.slide-text-info {
 	height: 550px;
 }
 .about-grid:hover,.n-about-grid{
-	background:url(../images/top-grid-info-bg-bl.png);
+	background-color: #686a65;
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
@@ -539,11 +539,14 @@ div.slide-text-info {
 	padding: 4x;
 	text-align: center;
 }
-.card-list .card-item .problembig {
-  margin-left: -15px;
-  margin-right: -15px;
-  font-size: 28px;
-  text-align: center;
+.card-list .card-item .problem {
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: clamp(15px, 6vw, 24px);
+}
+.namespec{
+	color: #1f1fba;
 }
 .slider-wrapper {
 	overflow: hidden;
@@ -577,7 +580,7 @@ div.slide-text-info {
 }
 
 .team-member-photo {
-    width: 30%;
+    width: 40%;
 }
 
 .team-member-info {
@@ -789,6 +792,13 @@ div.slide-text-info {
 	opacity: 0;
 	-moz-opacity: 0;
 	filter: alpha(opacity=0);
+}
+/*---- Journals - start -----*/
+.journal-text{
+	color:#fff;
+}
+.seemore{
+	color: #4886c0;
 }
 /*---- responsive-design -----*/
 @media(max-width:1024px){

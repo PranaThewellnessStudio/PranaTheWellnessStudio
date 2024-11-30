@@ -743,30 +743,6 @@ div.slide-text-info {
 	display: inline-block;
 	padding: 0 0.3em;
 }
-.copy-right-right ul li a span{
-	width: 28px;
-	height: 45px;
-	display: inline-block;
-	background: url(../images/f-social-icons2.png) no-repeat 6px 0px;
-}
-.copy-right-right ul li a.whatsapp span{
-	background-position: 0px 0px;
-}
-/* .copy-right-right ul li a.whatsapp span:hover{
-	background-position: 0px -25px;
-} */
-.copy-right-right ul li a.instagram span{
-	background-position: -30px 0px;
-}
-/* .copy-right-right ul li a.instagram span:hover{
-	background-position: -25px -25px;
-} */
-.copy-right-right ul li a.facebook span{
-	background-position: -60px 0px;
-}
-/* .copy-right-right ul li a.facebook span:hover{
-	background-position: -69px -25px;
-} */
 .copy-right {
 	padding: 1.2em 0em 0.6em;
 }

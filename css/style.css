@@ -774,7 +774,8 @@ div.slide-text-info {
 	color:#fff;
 }
 .seemore{
-	color: #4886c0;
+	color: #8fb7dc;
+	font-size: 15px;
 }
 /*---- responsive-design -----*/
 @media(max-width:1024px){
